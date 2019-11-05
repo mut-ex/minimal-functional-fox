@@ -1,0 +1,98 @@
+/* Remember to change your username */
+@import url('file:///home/YOURUSERNAME/.cache/wal/colors.css');
+
+window#main-window {
+    --toolbar-bgcolor: var(--color0) !important;
+    --lwt-accent-color: var(--color0) !important;
+    --lwt-toolbar-field-background-color: var(--color0) !important;
+    --lwt-toolbar-field-color: var(--color6) !important;
+    --chrome-content-separator-color: none !important;
+    --backbutton-background: none !important;
+}
+
+:root:not([uidensity="compact"]):not([chromehidden~="toolbar"]) #nav-bar[brighttext] > #PanelUI-button {
+    border-image-source: linear-gradient(transparent, transparent) !important;
+}
+
+#urlbar,
+#searchbar {
+    border: none !important;
+}
+
+#identity-box,
+#tracking-protection-icon-container,
+.urlbar-icon, .tab-icon-image {
+    display: none !important;
+}
+
+#toolbar-menubar:not([autohide="true"])+#TabsToolbar .tabbrowser-tab>.tab-stack>.tab-background,
+:root:not([tabsintitlebar]) .tab-background,
+:root[extradragspace] .tab-background {
+    border-top: 0 !important;
+}
+
+.tab-line {
+    height: 0 !important;
+}
+
+.close-icon {
+    display: none !important;
+}
+
+#page-action-buttons>*:not(#star-button-box),
+.urlbar-history-dropmarker {
+    opacity: 0 !important;
+}
+
+#urlbar:hover #page-action-buttons>*,
+#urlbar:hover .urlbar-history-dropmarker {
+    opacity: 1 !important;
+}
+
+/* Removal of black bottom 1px line */
+#navigator-toolbox::after {
+    display: none !important;
+}
+
+menubar,
+menubutton,
+menulist,
+menu,
+menuitem,
+textbox,
+toolbar,
+tab,
+tree,
+.tree-rows {
+    font-family: 'mononoki Nerd Font', sans-serif !important;
+    font-size: 12pt !important;
+    font-weight: 600 !important;
+    -moz-appearance: none !important;
+}
+
+#navigator-toolbox {
+    --tabs-border-color: none !important;;
+
+}
+
+/* This removes the tab separators */
+.tabbrowser-tab::before,
+.tabbrowser-tab::after {
+    display: none !important;
+}
+
+.tab-background[selected=true] {
+  color: #33ff33 !important;
+}
+
+/* This moves the tabs under the URL bar */
+#titlebar {
+    -moz-box-ordinal-group: 3 !important;
+  }
+
+.tabbrowser-tab[selected="true"] {
+  font-weight: bold !important;
+  color: var(--color3) !important;
+  background-image: linear-gradient(rgba(102,51,102,0), rgba(102,51,102,0) 50%),
+                    linear-gradient(-moz-dialog, -moz-dialog) !important;
+}

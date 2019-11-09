@@ -1,34 +1,34 @@
 /* Remember to change your username */
-@import url('file:///home/adil/.cache/wal/colors.css');
+/* @import url('file:///home/USERNAME/.cache/wal/colors.css'); */
 
 window#main-window {
-    --toolbar-bgcolor: var(--color0) !important;
-    --lwt-accent-color: var(--color0) !important;
-    --lwt-toolbar-field-background-color: var(--color0) !important;
-    --lwt-toolbar-field-color: var(--color6) !important;
+    --toolbar-bgcolor: #111111 !important;
+    --lwt-accent-color: #111111 !important;
+    --lwt-toolbar-field-background-color: #111111 !important;
+    --lwt-toolbar-field-color: #cccccc !important;
     --chrome-content-separator-color: none !important;
     --backbutton-background: none !important;
-    --arrowpanel-background: var(--color0) !important;
-    --arrowpanel-border-color: var(--color0) !important;
+    --arrowpanel-background: #111111 !important;
+    --arrowpanel-border-color: #111111 !important;
 
-    --lwt-sidebar-background-color: var(--color0) !important;
+    --lwt-sidebar-background-color: #111111 !important;
 }  
 
 textbox {
-    background-color: var(--color0) !important;
+    background-color: #111111 !important;
     border: none !important;
 }
 
 vbox[style], hbox[style] {
-  background-color: var(--color0) !important;
+  background-color: #111111 !important;
   border: none !important;
 }
 .sidebar-placesTree {
-    background-color: var(--color0) !important;
+    background-color: #111111 !important;
     border: none !important;
 }
 :root[lwt-popup-brighttext] {
-    --panel-separator-color: var(--color0) !important;
+    --panel-separator-color: #111111 !important;
     border: none !important;
 }
 
@@ -90,8 +90,9 @@ toolbar,
 tab,
 tree,
 .tree-rows {
-    font-family: 'Input Sans', sans-serif !important;
+    font-family: 'Input Condensed', monospace !important;
     font-size: 14pt !important;
+    font-weight: bold;
     font-style: normal !important;
     -moz-appearance: none !important;
     color: var(--color7) !important;
@@ -109,7 +110,7 @@ tree,
 }
 
 .tab-background[selected=true] {
-  color: var(--color2) !important;
+  color: #111111 !important;
 }
 
 /* This moves the tabs under the URL bar */
@@ -119,13 +120,13 @@ tree,
 .tabbrowser-tab {
     /* transition: color 0.25s !important; */
     text-align: center !important;
-    /* display: flex;
+    display: flex;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
 }
 
 .tabbrowser-tab[selected="true"], .tab-label-container[selected="true"] {
-  color: var(--color3) !important;
+  color: #c33dab !important;
   /* background-color: var(--color3) !important; */
   /* background-image: linear-gradient(var(--color3), var(--color3)) !important; */
 }
@@ -139,8 +140,8 @@ tree,
 
 .urlbarView:not(.megabar) {
     box-shadow: none !important;
-    background-color: var(--color0) !important;
-    font-family: 'Input Sans', sans-serif !important;
+    background-color: #111111 !important;
+    font-family: 'Input Condensed', monospace !important;
     font-size: 13pt !important;
 }
 
@@ -149,8 +150,8 @@ tree,
 }
 
 .urlbarView-row[selected] {
-    background: var(--color2) !important;
-    color: var(--background) !important;
+    background: #c33dab !important;
+    color: #111111 !important;
     fill-opacity: 1 !important;;
 }
 
@@ -160,6 +161,9 @@ tree,
     border: none !important;
 }   
     
+.customization-target {
+    padding: 18px !important;   
+}
     
     
     

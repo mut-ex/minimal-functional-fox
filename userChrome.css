@@ -1,5 +1,5 @@
 /* Remember to change your username */
-@import url('file:///home/YOURUSERNAME/.cache/wal/colors.css');
+@import url('file:///home/adil/.cache/wal/colors.css');
 
 window#main-window {
     --toolbar-bgcolor: var(--color0) !important;
@@ -8,6 +8,32 @@ window#main-window {
     --lwt-toolbar-field-color: var(--color6) !important;
     --chrome-content-separator-color: none !important;
     --backbutton-background: none !important;
+    --arrowpanel-background: var(--color0) !important;
+    --arrowpanel-border-color: var(--color0) !important;
+
+    --lwt-sidebar-background-color: var(--color0) !important;
+}  
+
+textbox {
+    background-color: var(--color0) !important;
+    border: none !important;
+}
+
+vbox[style], hbox[style] {
+  background-color: var(--color0) !important;
+  border: none !important;
+}
+.sidebar-placesTree {
+    background-color: var(--color0) !important;
+    border: none !important;
+}
+:root[lwt-popup-brighttext] {
+    --panel-separator-color: var(--color0) !important;
+    border: none !important;
+}
+
+#sidebar-header {
+    border: none !important;
 }
 
 :root:not([uidensity="compact"]):not([chromehidden~="toolbar"]) #nav-bar[brighttext] > #PanelUI-button {
@@ -64,10 +90,11 @@ toolbar,
 tab,
 tree,
 .tree-rows {
-    font-family: 'mononoki Nerd Font', sans-serif !important;
-    font-size: 12pt !important;
-    font-weight: 600 !important;
+    font-family: 'Input Sans', sans-serif !important;
+    font-size: 14pt !important;
+    font-style: normal !important;
     -moz-appearance: none !important;
+    color: var(--color7) !important;
 }
 
 #navigator-toolbox {
@@ -82,17 +109,71 @@ tree,
 }
 
 .tab-background[selected=true] {
-  color: #33ff33 !important;
+  color: var(--color2) !important;
 }
 
 /* This moves the tabs under the URL bar */
 #titlebar {
     -moz-box-ordinal-group: 3 !important;
   }
-
-.tabbrowser-tab[selected="true"] {
-  font-weight: bold !important;
-  color: var(--color3) !important;
-  background-image: linear-gradient(rgba(102,51,102,0), rgba(102,51,102,0) 50%),
-                    linear-gradient(-moz-dialog, -moz-dialog) !important;
+.tabbrowser-tab {
+    /* transition: color 0.25s !important; */
+    text-align: center !important;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 }
+
+.tabbrowser-tab[selected="true"], .tab-label-container[selected="true"] {
+  color: var(--color3) !important;
+  /* background-color: var(--color3) !important; */
+  /* background-image: linear-gradient(var(--color3), var(--color3)) !important; */
+}
+
+.chromeclass-location {
+    border: none !important;
+    box-shadow: none !important;
+    background-image: none !important;
+    
+}
+
+.urlbarView:not(.megabar) {
+    box-shadow: none !important;
+    background-color: var(--color0) !important;
+    font-family: 'Input Sans', sans-serif !important;
+    font-size: 13pt !important;
+}
+
+.urlbarView-favicon {
+    display: none !important;
+}
+
+.urlbarView-row[selected] {
+    background: var(--color2) !important;
+    color: var(--background) !important;
+    fill-opacity: 1 !important;;
+}
+
+.sidebar-splitter {
+
+    -moz-appearance: none;
+    border: none !important;
+}   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

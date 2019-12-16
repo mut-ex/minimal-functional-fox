@@ -379,9 +379,13 @@ hbox#urlbar[focused=true] {
 
 .tab-close-button {
 	opacity: 0;
-	transition: opacity 0.25s;
+	transition: opacity 0.2s ease !important;
+	-moz-transition: opacity 0.2s ease !important; 
 }
 
+.tab-close-button:hover {
+	opacity: 100;
+}
 .tab-stack {
 	display: flex !important;
 	justify-content: center !important;

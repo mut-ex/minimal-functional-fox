@@ -31,3 +31,5 @@ If you are looking for a minimal, yet functional Firefox userChrome stylesheet..
   3. Enable the `Dark` theme if not already enabled
 
 * Copy the contents of this repository to `.mozilla/firefox/<your-profile-name>/chrome/`
+
+* [You can find the new tab page extensions here](https://addons.mozilla.org/en-US/firefox/addon/nighttab/)

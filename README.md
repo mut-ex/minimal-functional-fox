@@ -11,10 +11,10 @@ If you are looking for a minimal, yet functional Firefox userChrome stylesheet..
 ## Features
 
 * Mimimal bloat
-* Easy way to quickly change the colors to your liking
+* Easy way to quickly change colors, tab dimensions, paddings to your liking through CSS variables
 * Pinned tabs are re-styled to be easy to identify
-* Tab list underneat the navigator area
-* Centered URL bar, with a thinner, centered result list
+* Tab list underneath the navigator area
+* Centered URL bar, with a thinner, centered results list
 * Debloated history, and bookmarks sidebars
 * Fix for buggy shadows on Linux
 
@@ -31,5 +31,12 @@ If you are looking for a minimal, yet functional Firefox userChrome stylesheet..
   3. Enable the `Dark` theme if not already enabled
 
 * Copy the contents of this repository to `.mozilla/firefox/<your-profile-name>/chrome/`
+
+* **Optional but recommended**
+  1. Select the Customize option from the hamburger menu
+  2. Remove all items except for:
+    * Forward button
+    * Back button
+    * Downloads button
 
 * [You can find the new tab page extension here](https://addons.mozilla.org/en-US/firefox/addon/nighttab/)

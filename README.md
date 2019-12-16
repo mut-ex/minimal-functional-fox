@@ -1,5 +1,4 @@
 # minimal-functional-fox
-====
 
 If you are looking for a minimal, yet functional Firefox userChrome stylesheet...you might like this one!
 
@@ -7,7 +6,7 @@ If you are looking for a minimal, yet functional Firefox userChrome stylesheet..
 ![userChrome.css preview 2](https://github.com/turing753/myuserchrome/blob/master/preview_2.png)
 
 ## Features
-====
+
 * Mimimal bloat
 * Easy way to quickly change the colors to your liking
 * Pinned tabs are re-styled to be easy to identify
@@ -17,7 +16,6 @@ If you are looking for a minimal, yet functional Firefox userChrome stylesheet..
 * Fix for buggy shadows on Linux
 
 ## Instructions
-====
 
 * Make sure that you have enabled the userChrome.css option
   1. Go to the address `about:config` in Firefox

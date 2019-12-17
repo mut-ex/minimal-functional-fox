@@ -12,7 +12,7 @@ If you are looking for a minimal, yet functional Firefox userChrome stylesheet..
 
 * Mimimal bloat
 * Easy way to quickly change colors, tab dimensions, paddings to your liking through CSS variables
-* Pinned tabs are re-styled to be easy to identify
+* Pinned tabs are re-styled to standout
 * Tab list underneath the navigator area
 * Centered URL bar, with a thinner, centered results list
 * Debloated history, and bookmarks sidebars
@@ -31,6 +31,12 @@ If you are looking for a minimal, yet functional Firefox userChrome stylesheet..
   3. Enable the `Dark` theme if not already enabled
 
 * Copy the contents of this repository to `.mozilla/firefox/<your-profile-name>/chrome/`
+  * <your-profile-name> will be a directory ending with '-release' and have a bunch of files in it
+  * If there isn't a chrome folder, you can just go ahead and create one
+
+* To tune different parameters like tab height, url bar padding etc, modify the CSS variables towards the top of the file.
+
+* If your new tab button looks too tiny/squished, [check out this fix](https://www.reddit.com/r/unixporn/comments/ebchep/oc_i_created_this_userchrome_configuration_to_be/fb59g0k?utm_source=share&utm_medium=web2x)
 
 * **Optional but recommended**
   1. Select the Customize option from the hamburger menu

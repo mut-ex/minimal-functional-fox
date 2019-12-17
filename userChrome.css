@@ -26,9 +26,7 @@ window#main-window {
 	--color-urlbar-buttons-bg    : #fc6b89;
 	--color-urlbar-text          : var(--color-5);
 
-	
 	/* Easy way to tweak most params */
-
 	--gap-between-tabs                   : 10px;
 	--margin-around-urlbar               : 9px;
 	--margin-before-back-button          : 9px;
@@ -36,12 +34,12 @@ window#main-window {
 	--pinned-tab-favicon-dim             : 27px;
 	--tab-height                         : 40px;
 	--tabs-container-height              : 135px;
-	--tab-text-font                      : "Hasklug Nerd Font", sans-serif;
-	--tab-text-font-size                 : 13pt;
+	--tab-text-font                      : "System-ui", sans-serif;
+	--tab-text-font-size                 : 14pt;
 	--margin-before-tab-list             : 16px;
 	--margin-after-tab-list              : -17px;
 	--urlbar-text-font                   : "mononoki Nerd Font", sans-serif;
-	--urlbar-text-size                   : 13pt;
+	--urlbar-text-size                   : 15pt;
 	--urlbar-text-weight                 : 600;
 	--urlbar-list-width                  : 50%;
 	--urlbar-container-margin            : 12px;
@@ -117,9 +115,6 @@ window#history-panel {
 	--lwt-sidebar-text-color: var(--color-fg) !important;
 }
 
-
-
-
 /*
 ======================================================================
 * Rules for side bar stuff
@@ -138,9 +133,6 @@ hbox#browser {
 .sidebar-splitter {
 	display: none !important;
 }
-
-
-
 
 /*
 ======================================================================
@@ -183,7 +175,7 @@ hbox#browser {
 	border: none !important;
 	border: none !important;
 	box-shadow: none !important;
-	height: var(--tabs-container-height); /* This controls the height of the container that holds the tabs */
+	height: var(--tabs-container-height); /*This controls the height of the container that holds the tabs*/
 }
 
 :root:not([uidensity="compact"]):not([chromehidden~="toolbar"]) #PanelUI-button {
@@ -242,10 +234,11 @@ hbox#urlbar[focused=true] {
 	background-image: none !important;
 }
 
-/* This centers and reduces the width of the urlbar list */
+/* This centers the reduces the width of the urlbar list */
 .urlbarView:not(.megabar) {
 	box-shadow: none !important;
 	background-color: var(--color-bg) !important;
+
 	width: var(--urlbar-list-width) !important;
 	margin-left: calc(var(--urlbar-list-width) / 2) !important;
 	border-radius: 0 8px 8px !important;
@@ -279,9 +272,6 @@ hbox#urlbar[focused=true] {
 	background-color: var(--color-bg) !important;
 }
 
-
-
-
 /*
 ======================================================================
 * Rules for Tabs
@@ -307,7 +297,6 @@ hbox#urlbar[focused=true] {
 	border-radius: var(--tab-height) !important;
 	max-height: var(--tab-height) !important;
 	min-height: var(--tab-height) !important;
-	transition: opacity 0.25, background-image 0.25 !important;
 }
 
 .tabbrowser-tab[pinned=true] {
@@ -316,6 +305,7 @@ hbox#urlbar[focused=true] {
 		var(--color-tab-pinned-normal),
 		var(--color-tab-pinned-normal)
 	) !important;
+
 }
 
 .tab-content {
@@ -327,6 +317,7 @@ hbox#urlbar[focused=true] {
 .tabbrowser-tab:hover {
 	background-image: linear-gradient(77deg, var(--color-tab-hover-start), var(--color-tab-hover-end)) !important;
 	border-radius: var(--tab-height) !important;
+  
 }
 
 /* Pinned tabs */
@@ -336,6 +327,7 @@ hbox#urlbar[focused=true] {
 }
 
 .tabbrowser-tab[pinned="true"] {
+	/*   border-bottom-right-radius: 4px !important; */
 	color: #1d1d1d !important;
 	min-width: var(--tab-height) !important;
 	max-width: var(--tab-height) !important;

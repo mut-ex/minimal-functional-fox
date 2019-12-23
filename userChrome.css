@@ -387,3 +387,8 @@ hbox#urlbar[focused=true] {
 	margin-inline-start: var(--margin-before-tab-list) !important;
 	margin-inline-end: var(--margin-after-tab-list) !important;
 }
+
+#PlacesToolbarItems {
+  display: flex !important;
+  justify-content: center !important;
+}

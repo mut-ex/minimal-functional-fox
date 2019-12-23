@@ -7,12 +7,12 @@ window#main-window {
 	*/
 
 	--color-fg   : #fefefa;
-	--color-bg   : #282a36;
-	--color-0    : #43c9cf;
-	--color-1    : #d0d01e;
-	--color-2    : #fc6b89;
-	--color-3    : #bc6ccc;
-	--color-4    : #f79130;
+	--color-bg   : #2e3440;
+	--color-0    : #3b4252;
+	--color-1    : #d8dee9;
+	--color-2    : #d8dee9;
+	--color-3    : #3b4252;
+	--color-4    : #d8dee9;
 	--color-5    : #ead2ef;
 
 	--color-tab-active-end       : var(--color-4);
@@ -34,8 +34,9 @@ window#main-window {
 	--pinned-tab-favicon-dim             : 27px;
 	--tab-height                         : 40px;
 	--tabs-container-height              : 135px;
-	--tab-text-font                      : "System-ui", sans-serif;
-	--tab-text-font-size                 : 14pt;
+  --tabs-container-padding             : 9px;
+	--tab-text-font                      : "Roboto", sans-serif;
+	--tab-text-font-size                 : 12pt;
 	--margin-before-tab-list             : 16px;
 	--margin-after-tab-list              : -17px;
 	--urlbar-text-font                   : "mononoki Nerd Font", sans-serif;
@@ -176,6 +177,7 @@ hbox#browser {
 	border: none !important;
 	box-shadow: none !important;
 	height: var(--tabs-container-height); /*This controls the height of the container that holds the tabs*/
+  padding: var(--tabs-container-padding);
 }
 
 :root:not([uidensity="compact"]):not([chromehidden~="toolbar"]) #PanelUI-button {

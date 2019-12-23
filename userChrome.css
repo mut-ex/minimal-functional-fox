@@ -288,7 +288,7 @@ hbox#urlbar[focused=true] {
 }
 
 .tab-loading-burst {
-	border-radius: var(--tab-height) !important;
+/*	border-radius: var(--tab-height) !important; */
 }
 
 .tabbrowser-tab {
@@ -296,7 +296,7 @@ hbox#urlbar[focused=true] {
 	--tab-line-color: none !important;
 	background-color: var(--color-bg) !important;
 	background-image: linear-gradient(to left, var(--color-tab-normal-start), var(--color-tab-normal-end)) !important;
-	border-radius: var(--tab-height) !important;
+/*	border-radius: var(--tab-height) !important; */
 	max-height: var(--tab-height) !important;
 	min-height: var(--tab-height) !important;
 }
@@ -318,7 +318,7 @@ hbox#urlbar[focused=true] {
 
 .tabbrowser-tab:hover {
 	background-image: linear-gradient(77deg, var(--color-tab-hover-start), var(--color-tab-hover-end)) !important;
-	border-radius: var(--tab-height) !important;
+/*	border-radius: var(--tab-height) !important; */
   
 }
 
@@ -338,7 +338,7 @@ hbox#urlbar[focused=true] {
 .tabbrowser-tab[selected="true"] {
 	background-image: linear-gradient(77deg, var(--color-tab-active-start), var(--color-tab-active-end)) !important;
 	border: none !important;
-	border-radius: var(--tab-height);
+/*	border-radius: var(--tab-height); */
 }
 
 /* The round pinned tab favicon */

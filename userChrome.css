@@ -9,11 +9,11 @@ window#main-window {
 	--color-fg   : #fefefa;
 	--color-bg   : #2e3440;
 	--color-0    : #3b4252;
-	--color-1    : #d8dee9;
-	--color-2    : #d8dee9;
+	--color-1    : #88c0d0;
+	--color-2    : #8fbcbb;
 	--color-3    : #3b4252;
-	--color-4    : #d8dee9;
-	--color-5    : #ead2ef;
+	--color-4    : #8fbcbb;
+	--color-5    : #434c5e;
 
 	--color-tab-active-end       : var(--color-4);
 	--color-tab-active-start     : var(--color-2);
@@ -33,6 +33,7 @@ window#main-window {
 	--padding-around-searchengine-opts   : 10px;
 	--pinned-tab-favicon-dim             : 27px;
 	--tab-height                         : 40px;
+  --border-radius                      : 5px;
 	--tabs-container-height              : 135px;
   --tabs-container-padding             : 9px;
 	--tab-text-font                      : "Roboto", sans-serif;
@@ -288,7 +289,7 @@ hbox#urlbar[focused=true] {
 }
 
 .tab-loading-burst {
-/*	border-radius: var(--tab-height) !important; */
+	border-radius: var(--border-radiu) !important; */
 }
 
 .tabbrowser-tab {
@@ -296,7 +297,7 @@ hbox#urlbar[focused=true] {
 	--tab-line-color: none !important;
 	background-color: var(--color-bg) !important;
 	background-image: linear-gradient(to left, var(--color-tab-normal-start), var(--color-tab-normal-end)) !important;
-/*	border-radius: var(--tab-height) !important; */
+	border-radius: var(--border-radius) !important; */
 	max-height: var(--tab-height) !important;
 	min-height: var(--tab-height) !important;
 }
@@ -318,7 +319,7 @@ hbox#urlbar[focused=true] {
 
 .tabbrowser-tab:hover {
 	background-image: linear-gradient(77deg, var(--color-tab-hover-start), var(--color-tab-hover-end)) !important;
-/*	border-radius: var(--tab-height) !important; */
+	border-radius: var(--border-radius) !important;
   
 }
 
@@ -329,7 +330,7 @@ hbox#urlbar[focused=true] {
 }
 
 .tabbrowser-tab[pinned="true"] {
-	/*   border-bottom-right-radius: 4px !important; */
+  border-bottom-right-radius: 4px !important; */
 	color: #1d1d1d !important;
 	min-width: var(--tab-height) !important;
 	max-width: var(--tab-height) !important;
@@ -338,7 +339,7 @@ hbox#urlbar[focused=true] {
 .tabbrowser-tab[selected="true"] {
 	background-image: linear-gradient(77deg, var(--color-tab-active-start), var(--color-tab-active-end)) !important;
 	border: none !important;
-/*	border-radius: var(--tab-height); */
+  border-radius: var(--border-radius); */
 }
 
 /* The round pinned tab favicon */

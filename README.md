@@ -23,6 +23,8 @@ If you are looking for a minimal, yet functional Firefox userChrome stylesheet..
 
 ## Instructions
 
+### Manual
+
 * Make sure that you have enabled the **userChrome** option
   1. Go to the address `about:config` in Firefox
   2. Search for `toolkit.legacyUserProfileCustomizations.stylesheets`
@@ -36,8 +38,21 @@ If you are looking for a minimal, yet functional Firefox userChrome stylesheet..
 * Copy the contents of this repository to `.mozilla/firefox/<your-profile-name>/chrome/`
   * <your-profile-name> will be a directory ending with '-release' and have a bunch of files in it
   * If there isn't a chrome folder, you can just go ahead and create one
-
+  
 * If your new tab button looks too tiny/squished, [check out this fix](https://www.reddit.com/r/unixporn/comments/ebchep/oc_i_created_this_userchrome_configuration_to_be/fb59g0k?utm_source=share&utm_medium=web2x)
+
+### Command-line
+
+```bash
+profile="$(readlink -f ~/.mozilla/firefox/*-release)" && \
+cd "$profile" && \
+mkdir chrome && \
+cd chrome && \
+git clone https://github.com/mut-ex/minimal-functional-fox.git && \
+[[ -s userChrome.css ]] || echo >> userChrome.css && \
+sed -i '1s/^/@import "minimal-functional-fox\/userChrome.css";\n/' userChrome.css && \
+echo 'user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);' >> ../user.js
+```
 
 * **Optional but recommended**
   1. Select the Customize option from the hamburger menu

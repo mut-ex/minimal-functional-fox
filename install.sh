@@ -50,16 +50,16 @@ MOZILLA_USER_DIRECTORY="$(find ~/.mozilla/firefox -maxdepth 1 -type d -regextype
 if [[ -n $MOZILLA_USER_DIRECTORY ]]; then
     # echoerr "mozilla user directory found: $MOZILLA_USER_DIRECTORY"
 
-    CHROME_DIRECTORY="$(find $MOZILLA_USER_DIRECTORY -maxdepth 1 -type d -name 'zchrome')"
+    CHROME_DIRECTORY="$(find $MOZILLA_USER_DIRECTORY -maxdepth 1 -type d -name 'chrome')"
 
     if [[ -n $CHROME_DIRECTORY ]]; then
         # echoerr "chrome directory found: ""$CHROME_DIRECTORY"
         download_mff
     else
-        echoerr " [>>] No zchrome directory found! Creating one..."
-        mkdir $MOZILLA_USER_DIRECTORY"/zchrome"
+        echoerr " [>>] No chrome directory found! Creating one..."
+        mkdir $MOZILLA_USER_DIRECTORY"/chrome"
         if [[ $? -eq 0 ]]; then
-            CHROME_DIRECTORY="$MOZILLA_USER_DIRECTORY/zchrome"
+            CHROME_DIRECTORY="$MOZILLA_USER_DIRECTORY/chrome"
             # echoerr "Directory succesfully created"
             download_mff
         else

@@ -2,7 +2,7 @@
 
 > ###### *A minimal, yet functional configuration for Firefox!*
 
-![Demo]()
+![Demo](https://raw.githubusercontent.com/mut-ex/minimal-functional-fox/master/demo.gif)
 
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
 ------

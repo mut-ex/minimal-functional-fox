@@ -1,49 +1,102 @@
 # minimal-functional-fox
 
-If you are looking for a minimal, yet functional Firefox userChrome stylesheet...you might like this one!
+> ###### *A minimal, yet functional configuration for Firefox!*
 
+![Demo]()
 
-
-**Note:** Firefox update 72.0 basically broke just about everything. I have fixed almost everything and pushed the fixed userChrome file. However if you encounter any bugs feel free to open an issue. Thanks!
-
-
-
-## Preview
-
-![userChrome.css preview 1](https://github.com/turing753/myuserchrome/blob/master/preview.png)
-
+[![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
+------
 ## Features
 
-* Minimal bloat
-* Easy way to quickly change colors, tab dimensions, paddings to your liking through CSS variables
-* Pinned tabs are re-styled to stand out
-* Tab list underneath the navigator area
-* Centered URL bar, with a thinner, centered results list
-* Fix for buggy shadows on Linux
+- Minimal bloat (non-crucial icons and decorations hidden)
 
-## Instructions
+- Easy way to tweak fonts, colors, and spacings to your liking through CSS variables
 
-* Make sure that you have enabled the **userChrome** option
+- Tab list below toolbar
+
+- Tab(s) with sound playing highlighted with a different color
+
+- Centered URL bar with narrow-er results list
+
+- And more!
+
+------
+
+## Prerequisites
+
+* Verify that the user **stylesheets (userChrome)** option is enabled:
   1. Go to the address `about:config` in Firefox
+
   2. Search for `toolkit.legacyUserProfileCustomizations.stylesheets`
-  3. Confirm the option is set to true
 
-* Make sure that you have the `Dark` theme enabled
+  3. Confirm the option is set to **true**
+
+
+
+* Make sure that you have the **Default** theme enabled
   1. Go to the address `about:addons`
-  2. Select `Themes`
-  3. Enable the `Dark` theme if not already enabled
+  2. **Enable** the **Default** theme if not already enabled
 
-* Copy the contents of this repository to `.mozilla/firefox/<your-profile-name>/chrome/`
-  * <your-profile-name> will be a directory ending with '-release' and have a bunch of files in it
-  * If there isn't a chrome folder, you can just go ahead and create one
 
-* If your new tab button looks too tiny/squished, [check out this fix](https://www.reddit.com/r/unixporn/comments/ebchep/oc_i_created_this_userchrome_configuration_to_be/fb59g0k?utm_source=share&utm_medium=web2x)
+------
 
-* **Optional but recommended**
-  1. Select the Customize option from the hamburger menu
-  2. Remove all items except for:
+## Installation
+
+### Quick Install
+
+You can quickly install minimal functional fox via the command-line by using `curl`:
+
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/minimal-functional-fox/minimal-functional-fox/master/install.sh)"
+```
+
+It is a good idea to inspect the install script for projects you aren't familiar with. To do that, you can download the install script separately, go through it to make sure everything looks OK, then go ahead and run it once you are satisfied:
+
+```bash
+curl -Lo install.sh https://raw.githubusercontent.com/minimal-functional-fox/minimal-functional-fox/master/install.sh
+sh install.sh
+```
+
+**Note:** The install script will create a backup of your existing `userChrome.css`, and `userContent.css` files by renaming them to `userChrome.css~`, and `userContent.css~` respectively in the chrome directory.
+
+### Manual Install
+
+If quick install does not work, or if you simply prefer to; you can manually install  minimal functional fox through the following steps:
+
+1. Locate your Firefox user directory. You should be able to find it by navigating to `/home/.mozilla/firefox/` and looking for a directory ending with the world `.default-release`.
+2. Within your Firefox user directory, locate the `chrome` directory, if one does not already exist you can simply go ahead and create it yourself.
+3. Download the contents of this repository, and copy *all* the files to the chrome directory within your Firefox user directory.
+
+After installation, restart Firefox to see the effects.
+
+------
+
+
+## Recommended Tweaks
+
+* Select the **Customize** option from the **hamburger menu** **(≡)**, and remove all items except for:
     * Forward button
     * Back button
     * Downloads button
+* The new tab page extension is called **nightTab**. [You can can find it here](https://addons.mozilla.org/en-US/firefox/addon/nighttab/)
 
-* [You can find the new tab page extension here](https://addons.mozilla.org/en-US/firefox/addon/nighttab/)
+------
+
+## Customizing
+
+You can easily tweak the theme by changing the relevant CSS variables, starting with `--mff-` located within the :root section at the top of the `userChrome.css` file.
+
+```css
+ :root {
+     /* Minimal Functional Fox variables*/
+     --mff-bg: #293241;
+     --mff-icon-color: #e0fbfc;
+     --mff-nav-toolbar-padding: 8px;
+     /*
+     ...
+     ...
+     ...
+     */
+}
+```
+

@@ -1,29 +1,29 @@
  :root {
    /* Minimal Functional Fox variables*/
-  --mff-bg: #50514f;
-  --mff-icon-color: #ffe066;
+  --mff-bg: #293241;
+  --mff-icon-color: #e0fbfc;
   --mff-nav-toolbar-padding: 8px;
   --mff-sidebar-bg: var(--mff-bg);
   --mff-tab-border-radius: 0px;
   --mff-tab-color: #fefefa;
-  --mff-tab-font-family: "Hasklug Nerd Font", serif;
-  --mff-tab-font-size: 10pt;
-  --mff-tab-font-weight: 600;
+  --mff-tab-font-family: "Cantarell", sans;
+  --mff-tab-font-size: 11pt;
+  --mff-tab-font-weight: 400;
   --mff-tab-height: 32px;
   --mff-tab-pinned-bg: #70c1b3;
-  --mff-tab-selected-bg: #f25f5c;
-  --mff-tab-soundplaying-bg: #337ab7;
-  --mff-urlbar-color: #9bc1bc;
-  --mff-urlbar-focused-color: #ffe066;
-  --mff-urlbar-font-family: "mononoki Nerd Font", serif;
+  --mff-tab-selected-bg: #ee6c4d;
+  --mff-tab-soundplaying-bg: #9c89b8;
+  --mff-urlbar-color: #98c1d9;
+  --mff-urlbar-focused-color: #e0fbfc;
+  --mff-urlbar-font-family: "Cantarell", serif;
   --mff-urlbar-font-size: 12pt;
   --mff-urlbar-font-weight: 700;
-  --mff-urlbar-results-color: #fefefa;
+  --mff-urlbar-results-color: #e0fbfc;
   --mff-urlbar-results-font-family: "mononoki Nerd Font", serif;
   --mff-urlbar-results-font-size: 12pt;
   --mff-urlbar-results-font-weight: 700;
 
-  --mff-urlbar-results-url-color: #9bc1bc;
+  --mff-urlbar-results-url-color: #98c1d9;
   /*   --mff-tab-selected-bg: linear-gradient(90deg, rgba(232,74,95,1) 0%, rgba(255,132,124,1) 50%, rgba(254,206,168,1) 100%); */
   /*   --mff-urlbar-font-weight: 600; */
 
@@ -163,14 +163,22 @@ width: 50% !important;
   color: var(--mff-urlbar-results-color) !important;
 }
 
-.urlbarView-url {
+.urlbarView-row[type="bookmark"] > span{
+  color: green !important;
+}
+
+.urlbarView-row[type="switchtab"] > span{
+  color: orange !important;
+}
+
+.urlbarView-url, .search-panel-one-offs-container {
   color: var(--mff-urlbar-results-url-color) !important;
   font-family: var(--mff-urlbar-font-family);
   font-weight: var(--mff-urlbar-results-font-weight);
   font-size: var(--mff-urlbar-font-size) !important;
 }
 
-.urlbarView-favicon {
+.urlbarView-favicon, .urlbarView-type-icon {
   display: none !important;
 }
 

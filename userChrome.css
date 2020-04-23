@@ -1,9 +1,11 @@
  :root {
+
    /* Minimal Functional Fox variables*/
-  --mff-bg: #293241;
+  --mff-bg: #292f36;
   --mff-icon-color: #e0fbfc;
   --mff-nav-toolbar-padding: 8px;
   --mff-sidebar-bg: var(--mff-bg);
+  --mff-sidebar-color: #e0fbfc;
   --mff-tab-border-radius: 0px;
   --mff-tab-color: #fefefa;
   --mff-tab-font-family: "Cantarell", sans;
@@ -22,7 +24,6 @@
   --mff-urlbar-results-font-family: "mononoki Nerd Font", serif;
   --mff-urlbar-results-font-size: 12pt;
   --mff-urlbar-results-font-weight: 700;
-
   --mff-urlbar-results-url-color: #98c1d9;
   /*   --mff-tab-selected-bg: linear-gradient(90deg, rgba(232,74,95,1) 0%, rgba(255,132,124,1) 50%, rgba(254,206,168,1) 100%); */
   /*   --mff-urlbar-font-weight: 600; */
@@ -149,8 +150,21 @@ width: 50% !important;
   _____ ___   ___  _    ___   _   ___
 |_   _/ _ \ / _ \| |  | _ ) /_\ | _ \
   | || (_) | (_) | |__| _ \/ _ \|   /
-  |_| \___/ \___/|____|___/_/ \_\_|_\
+  |_| \___/ \___/|____|___/_/  \_\_|_\
 */
+
+.urlbar-icon > image {
+  fill: var(--mff-icon-color) !important;
+  color: var(--mff-icon-color) !important;
+}
+
+.toolbarbutton-text {
+  color: var(--mff-icon-color)  !important;
+}
+.urlbar-icon {
+  color: var(--mff-icon-color)  !important;
+
+}
 
 .toolbarbutton-icon {
 /* filter: drop-shadow(0 0 0.75rem crimson); */
@@ -288,6 +302,18 @@ toolbarbutton {
  \__ \| || |) | _|| _ \/ _ \|   /
  |___/___|___/|___|___/_/ \_\_|_\
 */
+
+.close-icon, .urlbar-icon {
+  fill: var(--mff-icon-color) !important;
+}
+
+.sidebar-placesTree {
+  color: var(--mff-sidebar-color) !important;
+}
+
+#sidebar-switcher-target {
+/*   color: white !important; */
+}
 
 #sidebar-box {
   --sidebar-background-color: var(--mff-sidebar-bg) !important;

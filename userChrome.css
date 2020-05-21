@@ -55,7 +55,7 @@
   opacity: 0.5 !important;
 }
 
-/* This positions the tabs under the navaigator container */
+/* This positions the tabs under the navigator container */
 #titlebar {
   -moz-box-ordinal-group: 3 !important;
 }

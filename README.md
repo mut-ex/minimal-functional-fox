@@ -2,6 +2,12 @@
 
 > ###### *A minimal, yet functional configuration for Firefox!*
 
+<p align="center">
+If you would like to show your appreciation for this project,<br>please consider a donation :)<br><br>
+<a href="https://www.paypal.com/donate/?business=Y4Y75KP2JBNJW&currency_code=USD">
+<img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="PayPal donation link"/></a>
+<p>
+
 ![Demo](https://raw.githubusercontent.com/mut-ex/minimal-functional-fox/master/demo.gif)
 
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
@@ -19,12 +25,6 @@
 - Centered URL bar with narrow-er results list
 
 - And more!
-
-<p align="center">
-If you would like to show your appreciation for this project,<br>please consider a donation :)<br><br>
-<a href="https://www.paypal.com/donate/?business=Y4Y75KP2JBNJW&currency_code=USD">
-<img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="PayPal donation link"/></a>
-<p>
 
 ------
 

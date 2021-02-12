@@ -3,7 +3,7 @@
    /* Minimal Functional Fox variables*/
   --mff-bg: #292f36;
   --mff-icon-color: #e0fbfc;
-  --mff-nav-toolbar-padding: 8px;
+  --mff-nav-toolbar-padding: 4px;
   --mff-sidebar-bg: var(--mff-bg);
   --mff-sidebar-color: #e0fbfc;
   --mff-tab-border-radius: 0px;
@@ -269,10 +269,6 @@ image#star-button {
 
 toolbar#nav-bar {
   padding: var(--mff-nav-toolbar-padding) !important;
-}
-
-toolbar#nav-bar {
-  padding: 4px !important;
 }
 
 #urlbar {

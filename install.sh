@@ -44,9 +44,14 @@ download_mff() {
 EOF
     echoerr " Installation successful! Enjoy :)"
 }
+os="$(cat /etc/os-release |grep -m 1 ID)"
+# arch linux and arch linux derivites have a nonstanard default profile location
+if [ "$os" == "ID=arch" ]; then
+		MOZILLA_USER_DIRECTORY="$(find ~/.mozilla/firefox -maxdepth 1 -type d -regextype egrep -regex '.*[a-zA-Z0-9]+.default-release-*[a-zA-Z0-9]+')"
+else
+		MOZILLA_USER_DIRECTORY="$(find ~/.mozilla/firefox -maxdepth 1 -type d -regextype egrep -regex '.*[a-zA-Z0-9]+.default-release')"
 
-MOZILLA_USER_DIRECTORY="$(find ~/.mozilla/firefox -maxdepth 1 -type d -regextype egrep -regex '.*[a-zA-Z0-9]+.default-release')"
-
+fi
 if [[ -n $MOZILLA_USER_DIRECTORY ]]; then
     # echoerr "mozilla user directory found: $MOZILLA_USER_DIRECTORY"
 
@@ -57,7 +62,7 @@ if [[ -n $MOZILLA_USER_DIRECTORY ]]; then
         download_mff
     else
         echoerr " [>>] No chrome directory found! Creating one..."
-        mkdir $MOZILLA_USER_DIRECTORY"/chrome"
+        mkdir "$MOZILLA_USER_DIRECTORY/chrome"
         if [[ $? -eq 0 ]]; then
             CHROME_DIRECTORY="$MOZILLA_USER_DIRECTORY/chrome"
             # echoerr "Directory succesfully created"
